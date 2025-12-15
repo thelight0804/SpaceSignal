@@ -23,7 +23,7 @@
 - **Container:** Docker & Docker Compose
 - **Cloud:** AWS
 
-## 🗺️ Roadmap
+## Roadmap
 
 ### Phase 1: 위치 기반 위성 추적 & 배포 (Current)
 - [ ] 사용자 위치 기반 위성 위치 API 개발
