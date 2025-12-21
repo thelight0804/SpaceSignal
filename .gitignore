@@ -1,4 +1,7 @@
 # AI Prompts
 .github/Prompts
 copilot-instructions.md
-docs\meetings\YYYY-MM-DD-주제.md
+
+# templates
+docs/decisions/000-ADR-template.md
+docs/meetings/YYYY-MM-DD-meeting-notes-template.md
