@@ -1,4 +1,6 @@
-# 🛰️ SpaceSignal (스페이스시그널)
+# 🛰️ SpaceSignal (스페이스 시그널)
+
+[English](README.en.md) | [日本語](README.ja.md)
 
 **SpaceSignal**은 전 세계 위성의 실시간 위치와 지상국 통신 로그를 지도 위에서 직관적으로 탐색할 수 있는 웹 서비스입니다.
 
@@ -14,7 +16,7 @@
 ### Backend
 - **Language:** Python 3.13+
 - **Framework:** FastAPI
-- **Database:** PostgreSQL (Planned)
+- **Database:** Amazon RDS for PostgreSQL 14+
 
 ### Frontend
 - **Framework:** Svelte (Vite)
@@ -22,6 +24,8 @@
 ### Infrastructure
 - **Container:** Docker & Docker Compose
 - **Cloud:** AWS
+- **IaC:** Terraform
+- **CI/CD:** GitHub Actions
 
 ## Roadmap
 
