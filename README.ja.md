@@ -1,5 +1,7 @@
 # 🛰️ SpaceSignal（スペースシグナル）
+
 [한국어](README.md) | [English](README.en.md)
+
 **SpaceSignal**は、世界中の衛星のリアルタイム位置と地上局通信ログを地図上で直感的に探索できるWebサービスです。
 
 > **現在の状態：** Phase 1 開発中（位置ベースの衛星追跡＆デプロイ）
