@@ -38,9 +38,9 @@ Git 브랜치 전략으로 **Modified GitHub Flow**(develop 브랜치 추가)를
 - **Self-Review**: 1인 프로젝트이므로 본인이 approve하되, AI 도구(GitHub Copilot, ChatGPT)로 코드 리뷰 수행
 
 ### 5. Commit Message: Conventional Commits
-- **형식**: `<타입>: <제목> (#이슈번호)`
+- **형식**: `<타입>: <제목> #이슈번호`
 - **타입**: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`
-- **예시**: `feat: Add FastAPI health endpoint (#15)`
+- **예시**: `feat: Add FastAPI health endpoint #15`
 
 ### 6. 릴리스 전략 (Walking Skeleton)
 - Phase 하나씩 완료할 때마다 `develop` → `main` 병합하여 AWS EC2에 배포.
