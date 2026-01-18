@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from datetime import datetime
+from datetime import datetime, timezone
 from starlette.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -22,5 +22,5 @@ def health_check():
     return {
         "status": "ok",
         "version": "0.0.1",
-        "timestamp": datetime.utcnow().isoformat()
+        "timestamp": datetime.now(timezone.utc).isoformat()
     }
