@@ -1,0 +1,16 @@
+# base image
+FROM python:3.13.11-slim
+
+# set work directory
+WORKDIR /app
+
+# install app dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# install app
+COPY . .
+
+# final configuration
+EXPOSE 8000
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
