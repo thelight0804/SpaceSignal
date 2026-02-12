@@ -11,6 +11,35 @@
 - **通信ログ解析：** 世界中の地上局で受信された衛星信号データに基づいて通信状況を監視します。
 - **地上局可視化：** 世界中の地上局の観測履歴を地図ベースで提供します。
 
+## はじめに
+
+### 前提条件
+- Docker
+- Docker Compose
+
+### 実行方法
+
+1. プロジェクトをクローン
+```bash
+git clone https://github.com/thelight0804/SpaceSignal
+cd SpaceSignal
+```
+
+2. Docker Composeで全サービスを実行
+```bash
+docker compose up
+```
+
+3. サービスへアクセス
+- **Backend API:** http://localhost:8000
+- **Frontend:** http://localhost:5173
+- **APIドキュメント (Swagger):** http://localhost:8000/docs
+
+### サービスの停止
+```bash
+docker compose down
+```
+
 ## 技術スタック
 
 ### Backend
