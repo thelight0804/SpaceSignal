@@ -11,6 +11,35 @@
 - **Communication Log Analysis:** Monitor communication status based on satellite signal data received from ground stations worldwide.
 - **Ground Station Visualization:** Provide map-based observation history of ground stations around the world.
 
+## Getting Started
+
+### Prerequisites
+- Docker
+- Docker Compose
+
+### How to Run
+
+1. Clone the project
+```bash
+git clone https://github.com/thelight0804/SpaceSignal
+cd SpaceSignal
+```
+
+2. Run all services with Docker Compose
+```bash
+docker compose up
+```
+
+3. Access services
+- **Backend API:** http://localhost:8000
+- **Frontend:** http://localhost:5173
+- **API Documentation (Swagger):** http://localhost:8000/docs
+
+### Stopping Services
+```bash
+docker compose down
+```
+
 ## Tech Stack
 
 ### Backend
