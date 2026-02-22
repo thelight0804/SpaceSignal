@@ -2,7 +2,7 @@
   let health;
   let error = null;
 
-  fetch("http://127.0.0.1:8000/health")
+  fetch(import.meta.env.VITE_API_URL + "/health")
     .then((response) => {
       if (!response.ok) {
         throw new Error(`Health check failed with status ${response.status}`);
