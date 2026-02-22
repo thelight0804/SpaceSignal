@@ -324,3 +324,6 @@ dist
 
 .svelte-kit/
 package
+
+# Vite
+.vite/
