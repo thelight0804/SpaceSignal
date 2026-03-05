@@ -1,3 +1,7 @@
+# Secrets & Keys
+*.pem
+*.key
+
 # AI Prompts
 .github/Prompts
 copilot-instructions.md
