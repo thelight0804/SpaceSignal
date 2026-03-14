@@ -1,12 +1,11 @@
+import os
 from fastapi import FastAPI
 from datetime import datetime, timezone
 from starlette.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-origins = [
-    "http://localhost:5173"
-]
+origins = os.getenv("ALLOWED_ORIGINS", "http://localhost:5173").split(",")
 
 app.add_middleware(
     CORSMiddleware,
