@@ -1,12 +1,16 @@
+import os
 from fastapi import FastAPI
 from datetime import datetime, timezone
 from starlette.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-origins = [
-    "http://localhost:5173"
-]
+ # CORS 허용 IP 목록
+origins = []
+
+for origin in os.getenv("ALLOWED_ORIGINS", "http://localhost:5173").split(","):
+    if origin.strip():
+        origins.append(origin.strip())
 
 app.add_middleware(
     CORSMiddleware,
