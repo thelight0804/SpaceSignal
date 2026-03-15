@@ -5,7 +5,12 @@ from starlette.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-origins = os.getenv("ALLOWED_ORIGINS", "http://localhost:5173").split(",")
+ # CORS 허용 IP 목록
+origins = []
+
+for origin in os.getenv("ALLOWED_ORIGINS", "http://localhost:5173").split(","):
+    if origin.strip():
+        origins.append(origin.strip())
 
 app.add_middleware(
     CORSMiddleware,
