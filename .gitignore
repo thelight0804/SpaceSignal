@@ -5,6 +5,7 @@
 # AI Prompts
 .github/Prompts
 copilot-instructions.md
+.github/instructions
 
 # templates
 docs/decisions/000-ADR-template.md
